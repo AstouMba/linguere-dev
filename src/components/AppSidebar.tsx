@@ -36,9 +36,12 @@ export function AppSidebar() {
       <SidebarHeader className="border-b border-border p-4">
         <div className="flex items-center justify-between">
           {open && (
-            <h2 className="text-lg font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Astou Mbow
-            </h2>
+            <div className="space-y-1">
+              <h2 className="text-lg font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                Astou Mbow
+              </h2>
+              <p className="text-xs text-muted-foreground">Linguere_Dev</p>
+            </div>
           )}
           <ThemeToggle />
         </div>

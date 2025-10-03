@@ -5,7 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/AppSidebar";
-import SnowEffect from "@/components/SnowEffect";
+import StarEffect from "@/components/StarEffect";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
@@ -21,7 +21,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <SnowEffect />
+      <StarEffect />
       <BrowserRouter>
         <SidebarProvider defaultOpen={true}>
           <div className="flex min-h-screen w-full">

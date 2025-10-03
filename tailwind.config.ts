@@ -73,16 +73,20 @@ export default {
           to: { height: "0" },
         },
         snowfall: {
-          "0%": { transform: "translateY(-10vh) translateX(0)", opacity: "0" },
+          "0%": { transform: "translateY(-10vh) translateX(0) rotate(0deg)", opacity: "0" },
           "10%": { opacity: "1" },
           "90%": { opacity: "1" },
-          "100%": { transform: "translateY(110vh) translateX(100px)", opacity: "0" },
+          "100%": { transform: "translateY(110vh) translateX(50px) rotate(360deg)", opacity: "0" },
         },
         "snowfall-2": {
-          "0%": { transform: "translateY(-10vh) translateX(0)", opacity: "0" },
+          "0%": { transform: "translateY(-10vh) translateX(0) rotate(0deg)", opacity: "0" },
           "10%": { opacity: "1" },
           "90%": { opacity: "1" },
-          "100%": { transform: "translateY(110vh) translateX(-100px)", opacity: "0" },
+          "100%": { transform: "translateY(110vh) translateX(-50px) rotate(-360deg)", opacity: "0" },
+        },
+        twinkle: {
+          "0%, 100%": { opacity: "0.3", transform: "scale(1)" },
+          "50%": { opacity: "1", transform: "scale(1.2)" },
         },
         float: {
           "0%, 100%": { transform: "translateY(0)" },
@@ -100,8 +104,9 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        snowfall: "snowfall 10s linear infinite",
-        "snowfall-2": "snowfall-2 12s linear infinite",
+        snowfall: "snowfall 15s linear infinite",
+        "snowfall-2": "snowfall-2 18s linear infinite",
+        twinkle: "twinkle 3s ease-in-out infinite",
         float: "float 6s ease-in-out infinite",
         glow: "glow 2s ease-in-out infinite",
         fadeIn: "fadeIn 0.6s ease-out",

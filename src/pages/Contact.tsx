@@ -6,23 +6,23 @@ const contactMethods = [
   {
     icon: Mail,
     label: "Email",
-    value: "astoumbow51@gmail.com",
-    href: "mailto:astoumbow51@gmail.com",
-    color: "from-blue-500 to-cyan-500"
+    value: "lingueredev@gmail.com",
+    href: "mailto:lingueredev@gmail.com",
+    color: "from-green-500 to-emerald-500"
   },
   {
     icon: Phone,
     label: "Téléphone",
-    value: "+221 77 199 28 43",
-    href: "tel:+221771992843",
-    color: "from-green-500 to-emerald-500"
+    value: "+221 77 167 25 04",
+    href: "tel:+221771672504",
+    color: "from-purple-500 to-pink-500"
   },
   {
     icon: MapPin,
     label: "Localisation",
     value: "Dakar, Sénégal",
     href: "#",
-    color: "from-red-500 to-orange-500"
+    color: "from-cyan-500 to-blue-500"
   }
 ];
 
@@ -42,7 +42,7 @@ const socialLinks = [
   {
     icon: Mail,
     label: "Email",
-    href: "mailto:astoumbow51@gmail.com",
+    href: "mailto:lingueredev@gmail.com",
     color: "hover:bg-primary hover:text-primary-foreground"
   }
 ];
@@ -135,9 +135,9 @@ const Contact = () => {
               sur les technologies web, je serais ravie de vous répondre.
             </p>
             <div className="flex flex-wrap justify-center gap-4 pt-4">
-              <Button asChild size="lg">
-                <a href="mailto:astoumbow51@gmail.com">
-                  <Mail className="mr-2 h-5 w-5" />
+              <Button asChild size="lg" className="group">
+                <a href="mailto:lingueredev@gmail.com">
+                  <Mail className="mr-2 h-5 w-5 group-hover:animate-bounce" />
                   Envoyer un Email
                 </a>
               </Button>

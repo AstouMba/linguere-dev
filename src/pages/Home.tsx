@@ -17,10 +17,13 @@ const Home = () => {
               </h2>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground">
                 Je suis{" "}
-                <span className="block mt-2 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                <span className="block mt-2 bg-gradient-to-r from-primary via-accent to-primary-glow bg-clip-text text-transparent">
                   <TypewriterText text="Astou Mbow" delay={150} />
                 </span>
               </h1>
+              <p className="text-xl md:text-2xl font-semibold bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
+                aka Linguere_Dev
+              </p>
               <p className="text-xl md:text-2xl text-muted-foreground">
                 Développeuse Web & Mobile | UI/UX Design
               </p>
@@ -65,7 +68,7 @@ const Home = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href="mailto:astoumbow51@gmail.com"
+                href="mailto:lingueredev@gmail.com"
                 className="p-3 rounded-full bg-card hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
               >
                 <Mail className="h-5 w-5" />

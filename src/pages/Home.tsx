@@ -22,7 +22,7 @@ const Home = () => {
                 </span>
               </h1>
               <p className="text-xl md:text-2xl font-semibold bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
-                aka Linguere_Dev
+              Linguere_Dev
               </p>
               <p className="text-xl md:text-2xl text-muted-foreground">
                 Développeuse Web & Mobile | UI/UX Design

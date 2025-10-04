@@ -13,6 +13,22 @@ const About = () => {
           <p className="text-xl text-muted-foreground">
             Découvrez mon parcours et mes passions
           </p>
+          <div className="flex gap-4 mt-4">
+            <a
+              href="/CV_FR.pdf"
+              download
+              className="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-medium text-white hover:opacity-90"
+            >
+              Télécharger CV (FR)
+            </a>
+            <a
+              href="/CV_EN.pdf"
+              download
+              className="inline-flex items-center gap-2 rounded-md bg-accent px-4 py-2 text-sm font-medium text-white hover:opacity-90"
+            >
+              Download CV (EN)
+            </a>
+          </div>
         </div>
 
         {/* Main Content */}

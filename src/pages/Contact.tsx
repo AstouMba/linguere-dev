@@ -93,10 +93,10 @@ const Contact = () => {
 
         {/* Social Links */}
         <Card>
-          <CardContent className="p-8">
+          <CardContent className="p-6 md:p-8">
             <div className="text-center space-y-6">
-              <h2 className="text-2xl font-bold">Retrouvez-moi sur</h2>
-              <div className="flex justify-center gap-4">
+              <h2 className="text-xl md:text-2xl font-bold">Retrouvez-moi sur</h2>
+              <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
                 {socialLinks.map((social) => {
                   const Icon = social.icon;
                   return (
@@ -105,7 +105,7 @@ const Contact = () => {
                       asChild
                       variant="outline"
                       size="lg"
-                      className={`${social.color} transition-all duration-300 hover:scale-110`}
+                      className={`${social.color} transition-all duration-300 hover:scale-110 w-full sm:w-auto`}
                     >
                       <a
                         href={social.href}

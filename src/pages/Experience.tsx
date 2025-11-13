@@ -3,10 +3,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const experiences = [
   {
-    title: "Développeuse Web & Mobile",
+    title: "Développement Web et Mobile",
     company: "Sonatel Academy",
     location: "Dakar, Sénégal",
-    period: "Février 2025 - En cours",
+    period: "2024–2025",
     description: "Formation intensive en développement web et mobile avec acquisition de compétences en JavaScript, React, PHP, Laravel et développement d'applications responsive.",
     achievements: [
       "Développement d'applications web modernes avec React et TypeScript",
@@ -19,7 +19,7 @@ const experiences = [
     title: "Certificat Azure DevOps Boards",
     company: "Coursera",
     location: "En ligne",
-    period: "Mai 2025",
+    period: "2025",
     description: "Certification en gestion de projet avec Azure DevOps, incluant la planification, le suivi et la collaboration d'équipe.",
     achievements: [
       "Gestion de projets avec Azure Boards",
@@ -29,16 +29,68 @@ const experiences = [
     ]
   },
   {
-    title: "Formation Marketing Digital",
-    company: "ForceN",
-    location: "Dakar, Sénégal",
-    period: "Novembre 2024",
-    description: "Formation complète en marketing digital couvrant les stratégies en ligne, les réseaux sociaux et l'analyse de données.",
+    title: "Certificat Jenkins — Automatisation de pipelines de livraison",
+    company: "Coursera",
+    location: "En ligne",
+    period: "2025",
+    description: "Certification en automatisation des pipelines de livraison continue avec Jenkins.",
     achievements: [
-      "Stratégies de marketing digital",
-      "Gestion des réseaux sociaux",
-      "SEO et référencement web",
-      "Analyse de performance et ROI"
+      "Configuration de pipelines CI/CD",
+      "Automatisation des tests et déploiements",
+      "Intégration avec Git et autres outils",
+      "Optimisation des processus de livraison"
+    ]
+  },
+  {
+    title: "Certificat Learn Object-Oriented Programming with PHP",
+    company: "Coursera",
+    location: "En ligne",
+    period: "2025",
+    description: "Apprentissage approfondi de la programmation orientée objet en PHP.",
+    achievements: [
+      "Maîtrise des concepts OOP en PHP",
+      "Implémentation de classes et objets",
+      "Héritage et polymorphisme",
+      "Bonnes pratiques de développement"
+    ]
+  },
+  {
+    title: "Certificat Prompt Engineering Generative AI for Marketing Advertising",
+    company: "Coursera",
+    location: "En ligne",
+    period: "2025",
+    description: "Formation en ingénierie de prompts pour l'IA générative appliquée au marketing et à la publicité.",
+    achievements: [
+      "Création de prompts efficaces pour l'IA",
+      "Applications en marketing digital",
+      "Optimisation de contenu généré",
+      "Stratégies d'IA en publicité"
+    ]
+  },
+  {
+    title: "Licence en Gestion et Économie",
+    company: "UCAD",
+    location: "Dakar, Sénégal",
+    period: "2020–2022",
+    description: "Formation universitaire en gestion et économie, développant des compétences en analyse économique et gestion d'entreprise.",
+    achievements: [
+      "Analyse économique et financière",
+      "Gestion d'entreprise",
+      "Économie internationale",
+      "Projets de recherche"
+    ]
+  },
+  {
+    title: "Bac S2",
+    company: "Lycée Cheikh Hamidou Kane, Mbao",
+    location: "Dakar, Sénégal",
+    period: "2019",
+    description: "Baccalauréat série S2 (sciences expérimentales) avec mention.",
+    achievements: [
+      "Excellence en mathématiques et sciences",
+      "Préparation aux études supérieures",
+      "Développement de compétences analytiques",
+      "Fondations solides en sciences"
     ]
   }
 ];
@@ -59,25 +111,25 @@ const Experience = () => {
 
         {/* Timeline */}
         <div className="relative">
-          {/* Vertical Line */}
-          <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-primary to-accent" />
+          {/* Vertical Line - Hidden on mobile */}
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-primary to-accent" />
 
           {/* Experience Items */}
-          <div className="space-y-12">
+          <div className="space-y-8 md:space-y-12">
             {experiences.map((exp, index) => (
               <div
                 key={exp.title}
                 className={`relative animate-fadeIn ${
                   index % 2 === 0 ? "md:pr-1/2 md:text-right" : "md:pl-1/2 md:ml-auto"
                 }`}
-                style={{ animationDelay: `${index * 200}ms` }}
+                style={{ animationDelay: `${index * 150}ms` }}
               >
-                {/* Timeline Dot */}
-                <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 -translate-y-1/2 top-8">
-                  <div className="h-4 w-4 rounded-full bg-primary border-4 border-background animate-glow" />
+                {/* Timeline Dot - Adjusted for mobile */}
+                <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 -translate-y-1/2 top-6 md:top-8">
+                  <div className="h-3 w-3 md:h-4 md:w-4 rounded-full bg-primary border-3 md:border-4 border-background animate-glow" />
                 </div>
 
-                <Card className="ml-8 md:ml-0 hover:shadow-xl transition-all duration-300 group">
+                <Card className="ml-12 md:ml-0 hover:shadow-xl transition-all duration-300">
                   <CardHeader>
                     <CardTitle className="text-2xl group-hover:text-primary transition-colors">
                       {exp.title}

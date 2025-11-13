@@ -5,33 +5,75 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "Clonage WhatsApp",
-    description: "Interface dynamique avec gestion de contacts, groupes et messages. Déployé sur Vercel (frontend) et Render (backend).",
-    technologies: ["JavaScript", "Tailwind CSS", "JSON Server"],
+    title: "API Banking — Gestion de comptes bancaires et transactions",
+    description: "Développement d'une API REST sécurisée pour la gestion des clients, comptes et transactions financières.",
+    technologies: ["Laravel 10", "PostgreSQL 15", "Swagger", "Docker"],
     features: [
-      "Interface utilisateur moderne et responsive",
-      "Gestion des contacts et groupes",
-      "Système de messagerie en temps réel",
-      "Déploiement cloud"
+      "Gestion complète des comptes clients",
+      "CRUD comptes avec validation d'identité",
+      "Transactions sécurisées (dépôt, retrait, transfert)",
+      "Middleware de sécurité et journalisation",
+      "Notifications et API documentation"
     ],
     links: {
       demo: "#",
-      github: "https://github.com/AstouMba"
+      github: "https://github.com/AstouMba/API-REST-Gestions-Comptes"
     }
   },
   {
-    title: "Application de Gestion d'Apprenants",
-    description: "Système complet de gestion pour promotions, référentiels et affectations avec architecture MVC.",
-    technologies: ["PHP", "HTML/CSS", "JSON"],
+    title: "MAXIT SA — Plateforme de transfert d'argent & gestion de comptes",
+    description: "Interface et backend pour la gestion des comptes et transferts.",
+    technologies: ["PHP Orienté Objet", "MVC", "MySQL/PostgreSQL", "Docker", "NGINX"],
     features: [
-      "Gestion de promotions",
-      "Gestion des référentiels",
-      "Système d'affectations",
-      "Architecture MVC légère"
+      "Gestion des comptes et transactions",
+      "Administration des droits utilisateurs",
+      "Notifications en temps réel"
     ],
     links: {
       demo: "#",
-      github: "https://github.com/AstouMba"
+      github: "https://github.com/AstouMba/MaxitaPro"
+    }
+  },
+  {
+    title: "App WOYOFAL — Simulation d'achat de crédit d'électricité",
+    description: "Gestion des achats de crédit et compteurs électriques.",
+    technologies: ["PHP", "Lightweight MVC", "REST API"],
+    features: [
+      "Génération de codes recharge automatique",
+      "Gestion clients et compteurs",
+      "API REST avec journalisation"
+    ],
+    links: {
+      demo: "#",
+      github: "https://github.com/AstouMba/App-Woyofal"
+    }
+  },
+  {
+    title: "API AppDaf — Vérification d'identité client",
+    description: "API pour récupérer automatiquement les informations clients depuis le NCI.",
+    technologies: ["PHP OOP", "REST API", "JSON"],
+    features: [
+      "Intégration avec systèmes externes",
+      "Récupération sécurisée des données",
+      "Validation automatique"
+    ],
+    links: {
+      demo: "#",
+      github: "https://github.com/AstouMba/APPDAF"
+    }
+  },
+  {
+    title: "Gestion des Salaires — RH & Paie",
+    description: "Application de gestion des employés, salaires et entreprises.",
+    technologies: ["React", "MySQL/PostgreSQL", "Tailwind CSS", "JavaScript"],
+    features: [
+      "Gestion RH et calculs salariaux",
+      "Génération de fiches de paie PDF",
+      "Suivi comptable intégré"
+    ],
+    links: {
+      demo: "#",
+      github: "https://github.com/AstouMba/Gestion-des-salaires"
     }
   }
 ];
@@ -41,7 +83,7 @@ const Projects = () => {
     <div className="min-h-screen p-6 md:p-12">
       <div className="max-w-6xl mx-auto space-y-12">
         {/* Header */}
-        <div className="space-y-4 animate-fadeIn">
+        <div className="space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Mes Projets
           </h1>
@@ -53,10 +95,9 @@ const Projects = () => {
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <Card 
-              key={project.title} 
-              className="hover:shadow-xl transition-all duration-300 animate-fadeIn group"
-              style={{ animationDelay: `${index * 200}ms` }}
+            <Card
+              key={project.title}
+              className="hover:shadow-xl transition-all duration-300 group"
             >
               <CardHeader>
                 <CardTitle className="text-2xl group-hover:text-primary transition-colors">
@@ -113,7 +154,7 @@ const Projects = () => {
         </div>
 
         {/* Call to Action */}
-        <Card className="bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20 animate-fadeIn animation-delay-400">
+        <Card className="bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20">
           <CardContent className="p-8 text-center space-y-4">
             <h3 className="text-2xl font-bold">Vous avez un projet en tête ?</h3>
             <p className="text-muted-foreground">

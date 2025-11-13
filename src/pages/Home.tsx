@@ -1,7 +1,6 @@
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import TypewriterText from "@/components/TypewriterText";
 import profilePhoto from "@/assets/profile-photo.jpeg";
 
 const Home = () => {
@@ -10,7 +9,7 @@ const Home = () => {
       <div className="max-w-6xl w-full mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text Content */}
-          <div className="space-y-8 animate-fadeIn">
+          <div className="space-y-8">
             <div className="space-y-4">
               <h2 className="text-primary text-lg md:text-xl font-medium">
                 Bienvenue sur mon portfolio
@@ -18,21 +17,19 @@ const Home = () => {
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground">
                 Je suis{" "}
                 <span className="block mt-2 bg-gradient-to-r from-primary via-accent to-primary-glow bg-clip-text text-transparent">
-                  <TypewriterText text="Astou Mbow" delay={150} />
+                  Astou Mbow
                 </span>
               </h1>
               <p className="text-xl md:text-2xl font-semibold bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
               Linguere_Dev
               </p>
               <p className="text-xl md:text-2xl text-muted-foreground">
-                Développeuse Web & Mobile | UI/UX Design
+                Développeuse Full Stack Web & Mobile
               </p>
             </div>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Développeuse web & mobile rigoureuse et créative, capable de concevoir 
-              des applications modernes, performantes et responsives. Passionnée par 
-              les technologies actuelles et toujours à l'affût de nouveaux défis.
+              Développeuse web & mobile polyvalente, créative et orientée expérience utilisateur. À l'aise sur le front-end comme sur le back-end, je conçois des interfaces modernes et performantes tout en garantissant une architecture propre et maintenable. Curieuse, autonome et rigoureuse, je privilégie la qualité, l'amélioration continue et la compréhension des besoins utilisateurs.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -77,7 +74,7 @@ const Home = () => {
           </div>
 
           {/* Right Column - Profile Image */}
-          <div className="relative animate-fadeIn animation-delay-200">
+          <div className="relative">
             <div className="relative z-10">
               <div className="relative overflow-hidden rounded-2xl border-4 border-primary/20 shadow-2xl hover:border-primary/40 transition-all duration-500 hover:scale-105 animate-float">
                 <img

@@ -13,8 +13,8 @@ const contactMethods = [
   {
     icon: Phone,
     label: "Téléphone",
-    value: "+221 77 167 25 04",
-    href: "tel:+221771672504",
+    value: "+221 77 199 28 43",
+    href: "tel:+221771992843",
     color: "from-purple-500 to-pink-500"
   },
   {
@@ -52,7 +52,7 @@ const Contact = () => {
     <div className="min-h-screen p-6 md:p-12">
       <div className="max-w-5xl mx-auto space-y-12">
         {/* Header */}
-        <div className="space-y-4 animate-fadeIn text-center">
+        <div className="space-y-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Contactez-moi
           </h1>
@@ -68,8 +68,7 @@ const Contact = () => {
             return (
               <Card
                 key={method.label}
-                className="hover:shadow-xl transition-all duration-300 animate-fadeIn group"
-                style={{ animationDelay: `${index * 100}ms` }}
+                className="hover:shadow-xl transition-all duration-300 group"
               >
                 <CardContent className="p-6 text-center space-y-4">
                   <div className="flex justify-center">
@@ -93,7 +92,7 @@ const Contact = () => {
         </div>
 
         {/* Social Links */}
-        <Card className="animate-fadeIn animation-delay-300">
+        <Card>
           <CardContent className="p-8">
             <div className="text-center space-y-6">
               <h2 className="text-2xl font-bold">Retrouvez-moi sur</h2>
@@ -126,7 +125,7 @@ const Contact = () => {
         </Card>
 
         {/* CTA Card */}
-        <Card className="bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20 animate-fadeIn animation-delay-400">
+        <Card className="bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20">
           <CardContent className="p-8 text-center space-y-4">
             <h3 className="text-2xl font-bold">Discutons de votre projet</h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">

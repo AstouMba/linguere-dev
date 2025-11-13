@@ -6,7 +6,7 @@ const About = () => {
     <div className="min-h-screen p-6 md:p-12">
       <div className="max-w-6xl mx-auto space-y-12">
         {/* Header */}
-        <div className="space-y-4 animate-fadeIn">
+        <div className="space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             À Propos de Moi
           </h1>
@@ -15,14 +15,14 @@ const About = () => {
           </p>
           <div className="flex gap-4 mt-4">
             <a
-              href="/CV_FR.pdf"
+              href="/CV_ASTOUMBOW_FR.pdf"
               download
               className="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-medium text-white hover:opacity-90"
             >
               Télécharger CV (FR)
             </a>
             <a
-              href="/CV_EN.pdf"
+              href="/CV_ASTOUMBOW_EN.pdf"
               download
               className="inline-flex items-center gap-2 rounded-md bg-accent px-4 py-2 text-sm font-medium text-white hover:opacity-90"
             >
@@ -33,7 +33,7 @@ const About = () => {
 
         {/* Main Content */}
         <div className="grid md:grid-cols-2 gap-8">
-          <Card className="hover:shadow-xl transition-all duration-300 animate-fadeIn">
+          <Card className="hover:shadow-xl transition-all duration-300">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Target className="h-5 w-5 text-primary" />
@@ -54,7 +54,7 @@ const About = () => {
             </CardContent>
           </Card>
 
-          <Card className="hover:shadow-xl transition-all duration-300 animate-fadeIn animation-delay-200">
+          <Card className="hover:shadow-xl transition-all duration-300">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Heart className="h-5 w-5 text-primary" />
@@ -95,7 +95,7 @@ const About = () => {
             </CardContent>
           </Card>
 
-          <Card className="hover:shadow-xl transition-all duration-300 animate-fadeIn animation-delay-300">
+          <Card className="hover:shadow-xl transition-all duration-300">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <BookOpen className="h-5 w-5 text-primary" />
@@ -104,29 +104,44 @@ const About = () => {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="space-y-2">
-                <h3 className="font-semibold text-lg">Développeuse Web & Mobile</h3>
+                <h3 className="font-semibold text-lg">Développement Web et Mobile</h3>
                 <p className="text-sm text-primary">Sonatel Academy, Dakar</p>
-                <p className="text-sm text-muted-foreground">Février 2025 - En cours</p>
+                <p className="text-sm text-muted-foreground">2024–2025</p>
               </div>
               <div className="space-y-2">
                 <h3 className="font-semibold">Certificat Azure DevOps Boards</h3>
                 <p className="text-sm text-primary">Coursera</p>
-                <p className="text-sm text-muted-foreground">Mai 2025</p>
+                <p className="text-sm text-muted-foreground">2025</p>
               </div>
               <div className="space-y-2">
-                <h3 className="font-semibold">Marketing Digital</h3>
-                <p className="text-sm text-primary">ForceN</p>
-                <p className="text-sm text-muted-foreground">Novembre 2024</p>
+                <h3 className="font-semibold">Certificat Jenkins — Automatisation de pipelines de livraison</h3>
+                <p className="text-sm text-primary">Coursera</p>
+                <p className="text-sm text-muted-foreground">2025</p>
               </div>
               <div className="space-y-2">
-                <h3 className="font-semibold">Licence Sciences Économiques</h3>
-                <p className="text-sm text-primary">Université de Dakar</p>
-                <p className="text-sm text-muted-foreground">2020-2022</p>
+                <h3 className="font-semibold">Certificat Learn Object-Oriented Programming with PHP</h3>
+                <p className="text-sm text-primary">Coursera</p>
+                <p className="text-sm text-muted-foreground">2025</p>
+              </div>
+              <div className="space-y-2">
+                <h3 className="font-semibold">Certificat Prompt Engineering Generative AI for Marketing Advertising</h3>
+                <p className="text-sm text-primary">Coursera</p>
+                <p className="text-sm text-muted-foreground">2025</p>
+              </div>
+              <div className="space-y-2">
+                <h3 className="font-semibold">Licence en Gestion et Économie</h3>
+                <p className="text-sm text-primary">UCAD, Dakar</p>
+                <p className="text-sm text-muted-foreground">2020–2022</p>
+              </div>
+              <div className="space-y-2">
+                <h3 className="font-semibold">Bac S2</h3>
+                <p className="text-sm text-primary">Lycée Cheikh Hamidou Kane, Mbao</p>
+                <p className="text-sm text-muted-foreground">2019</p>
               </div>
             </CardContent>
           </Card>
 
-          <Card className="hover:shadow-xl transition-all duration-300 animate-fadeIn animation-delay-400">
+          <Card className="hover:shadow-xl transition-all duration-300">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Award className="h-5 w-5 text-primary" />

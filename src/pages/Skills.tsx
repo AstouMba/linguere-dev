@@ -4,39 +4,33 @@ import { Badge } from "@/components/ui/badge";
 
 const skillCategories = [
   {
-    title: "Langages de Programmation",
+    title: "Langages",
     icon: Code,
-    skills: ["C", "C++", "C#", "Java", "Python", "PHP", "JavaScript", "TypeScript"],
+    skills: ["PHP", "JavaScript", "TypeScript", "SQL", "HTML", "CSS"],
     color: "from-blue-500 to-cyan-500"
   },
   {
-    title: "Développement Web",
+    title: "Frameworks",
     icon: Layers,
-    skills: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "React.js", "Vue.js", "Laravel"],
+    skills: ["Laravel", "Node.js", "Express", "React", "Angular", "Tailwind CSS"],
     color: "from-purple-500 to-pink-500"
-  },
-  {
-    title: "Outils & Environnements",
-    icon: Wrench,
-    skills: ["Git", "GitHub", "UML", "Figma", "Visual Studio Code", "PhpStorm", "IntelliJ IDEA", "PowerAMC", "PyCharm", "Android Studio", "Laragon", "Docker"],
-    color: "from-green-500 to-emerald-500"
   },
   {
     title: "Bases de Données",
     icon: Database,
-    skills: ["MySQL", "PostgreSQL", "MongoDB"],
+    skills: ["MySQL", "PostgreSQL"],
     color: "from-orange-500 to-red-500"
   },
   {
-    title: "Design & UI/UX",
-    icon: Palette,
-    skills: ["Figma", "Canva", "Tailwind CSS", "Responsive Design"],
-    color: "from-pink-500 to-rose-500"
+    title: "Outils",
+    icon: Wrench,
+    skills: ["Git", "GitHub", "Docker", "Jenkins", "Swagger", "Postman", "Figma"],
+    color: "from-green-500 to-emerald-500"
   },
   {
-    title: "Autres Compétences",
+    title: "Méthodes",
     icon: Server,
-    skills: ["API REST", "Travail en équipe", "Adaptabilité", "Gestion du temps", "Curiosité technologique"],
+    skills: ["MVC", "Architecture modulaire", "Responsive Design"],
     color: "from-indigo-500 to-blue-500"
   }
 ];
@@ -46,7 +40,7 @@ const Skills = () => {
     <div className="min-h-screen p-6 md:p-12">
       <div className="max-w-6xl mx-auto space-y-12">
         {/* Header */}
-        <div className="space-y-4 animate-fadeIn">
+        <div className="space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Mes Compétences
           </h1>
@@ -60,10 +54,9 @@ const Skills = () => {
           {skillCategories.map((category, index) => {
             const Icon = category.icon;
             return (
-              <Card 
-                key={category.title} 
-                className="hover:shadow-xl transition-all duration-300 animate-fadeIn group"
-                style={{ animationDelay: `${index * 100}ms` }}
+              <Card
+                key={category.title}
+                className="hover:shadow-xl transition-all duration-300 group"
               >
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3">
@@ -92,7 +85,7 @@ const Skills = () => {
         </div>
 
         {/* Soft Skills Section */}
-        <Card className="animate-fadeIn animation-delay-600 border-primary/20">
+        <Card className="border-primary/20">
           <CardHeader>
             <CardTitle className="text-2xl">Compétences Transversales</CardTitle>
           </CardHeader>

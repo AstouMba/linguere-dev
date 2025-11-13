@@ -2,6 +2,7 @@ import { ExternalLink, Github } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -161,7 +162,7 @@ const Projects = () => {
               N'hésitez pas à me contacter pour discuter de vos besoins et de la façon dont je peux vous aider.
             </p>
             <Button asChild>
-              <a href="/contact">Me Contacter</a>
+              <Link to="/contact">Me Contacter</Link>
             </Button>
           </CardContent>
         </Card>

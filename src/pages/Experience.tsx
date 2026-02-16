@@ -33,7 +33,7 @@ const experiences = [
       "Réalisation de projets en équipe suivant la méthodologie Agile"
     ]
   },
-  {
+  { 
     title: "Certificat Azure DevOps Boards",
     company: "Coursera",
     location: "En ligne",

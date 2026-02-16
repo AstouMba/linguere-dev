@@ -1,7 +1,25 @@
-import { Briefcase, Calendar, MapPin } from "lucide-react";
+import { Briefcase, Calendar, MapPin, Globe } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 const experiences = [
+  {
+    title: "Co-Fondatrice & Développeuse Full Stack",
+    company: "Ecosys IT Services",
+    location: "Sénégal",
+    period: "2023 – En cours",
+    website: "https://ecosys-it-tservice.vercel.app/index.html",
+    description: "Co-fondation d'une startup spécialisée dans les solutions informatiques sur mesure pour entreprises et entrepreneurs. Pilotage complet des projets clients, de l'analyse des besoins jusqu'au déploiement en production.",
+    achievements: [
+      "Plus de 15 projets clients livrés avec succès",
+      "Management et coordination d'une équipe de 3 développeurs",
+      "Conception et développement de solutions complètes (UI/UX jusqu'au déploiement)",
+      "Conseil technique et définition d'architectures adaptées",
+      "Mise en place de pratiques DevOps pour des déploiements fiables",
+      "Satisfaction client élevée avec retours positifs réguliers"
+    ],
+    technologies: ["Angular", "React", "Next.js", "Laravel", "Node.js", "Flutter", "Docker", "PostgreSQL", "MySQL"]
+  },
   {
     title: "Développement Web et Mobile",
     company: "Sonatel Academy",
@@ -147,12 +165,34 @@ const Experience = () => {
                         <Calendar className="h-4 w-4 text-primary" />
                         <span>{exp.period}</span>
                       </div>
+                      {exp.website && (
+                        <div className="flex items-center gap-2">
+                          <Globe className="h-4 w-4 text-primary" />
+                          <a 
+                            href={exp.website} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-primary hover:underline text-sm"
+                          >
+                            Voir le site
+                          </a>
+                        </div>
+                      )}
                     </div>
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <p className="text-muted-foreground leading-relaxed">
                       {exp.description}
                     </p>
+                    {exp.technologies && (
+                      <div className="flex flex-wrap gap-2">
+                        {exp.technologies.map((tech) => (
+                          <Badge key={tech} variant="secondary" className="text-xs">
+                            {tech}
+                          </Badge>
+                        ))}
+                      </div>
+                    )}
                     <div className="space-y-2">
                       <h4 className="font-semibold text-sm">Réalisations & Compétences</h4>
                       <ul className="space-y-2">
